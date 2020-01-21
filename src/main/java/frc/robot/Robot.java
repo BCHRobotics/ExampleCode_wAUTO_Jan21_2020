@@ -47,7 +47,7 @@ public class Robot extends TimedRobot {
   private Lift mLift = new Lift();
 
   //Teleop
-  private Teleop mteleop = new Teleop(mDrivetrain, mClimber, mGrabber, mLift, mOi);
+  private Teleop mTeleop = new Teleop(mDrivetrain, mClimber, mGrabber, mLift, mOi);
 
   // Auto
   private AutoCommands mAutoCommands = new AutoCommands(mDrivetrain, mClimber, mGrabber, mLift, ahrs);
@@ -142,8 +142,8 @@ public class Robot extends TimedRobot {
    */
   @Override
   public void teleopPeriodic() {
-    mteleop.driveStick();
-    mteleop.funStick();
+    mTeleop.driveStick();
+    mTeleop.funStick();
   }
 
   /**

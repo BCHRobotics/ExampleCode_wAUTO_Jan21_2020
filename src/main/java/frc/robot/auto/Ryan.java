@@ -9,14 +9,14 @@ package frc.robot.auto;
 
 public class Ryan {
 
-    private AutoCommands m_autoCommands;
+    private AutoCommands mAutoCommands;
 
     public Ryan(AutoCommands mAutoCommands){
-        this.m_autoCommands = mAutoCommands;
+        this.mAutoCommands = mAutoCommands;
     }
 
     public void driveToBalls(){
-        m_autoCommands.encoderDrive(100, 0.5, 0.5, 250, 10000);
+        mAutoCommands.encoderDrive(100, 0.5, 0.5, 250, 10000);
     }
 
 }
